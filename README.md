@@ -13,6 +13,13 @@ Demonstração simples e funcional de como usar o Elasticsearch para indexação
 
 ---
 
+## 🧪 Testado em
+- Node.js v18+
+- Docker v20+
+- Elasticsearch 8.x
+
+---
+
 ## 🚀 Como rodar o projeto
 
 1. Clone o repositório:
