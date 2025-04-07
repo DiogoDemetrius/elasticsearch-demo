@@ -27,7 +27,19 @@ async function buscarPorTitulo(titulo) {
   console.log('🔍 Resultado da busca:', result.hits.hits);
 }
 
-// Busca com erro de digitação (fuzzy)
+async function buscarPorAutor(autor) {
+  const result = await client.search({
+    index: 'livros',
+    query: {
+      match: { autor },
+    },
+  });
+
+  const quantidade = result.hits.hits.length;
+  console.log(`📚 ${quantidade} livros encontrados do autor "${autor}":`, result.hits.hits);
+}
+
+
 async function buscaFuzzy(titulo) {
   const result = await client.search({
     index: 'livros',
@@ -48,6 +60,7 @@ async function buscaFuzzy(titulo) {
 (async () => {
   await indexarDados();
 
-  await buscarPorTitulo('alienista');
-  await buscaFuzzy('brás cubis'); // erro proposital no nome
+  await buscarPorAutor('José de Alencar');
+  //await buscarPorTitulo('alienista');
+  //await buscaFuzzy('lufiola');
 })();
