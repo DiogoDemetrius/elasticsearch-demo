@@ -1,17 +1,20 @@
 {
   "dependencies": {
     "@elastic/elasticsearch": "^8.17.1",
-    "docker": "^1.0.0"
+    "axios": "^1.8.4",
+    "docker": "^1.0.0",
+    "ora": "^8.2.0"
   },
   "name": "elasticsearch",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "module"
 }
