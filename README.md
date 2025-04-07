@@ -32,10 +32,10 @@ Demonstração simples e funcional de como usar o Elasticsearch para indexação
     ```bash
     node index.js
 
-Você verá no terminal:
+    Você verá no terminal:
 
-Indexação dos livros
+    Indexação dos livros
 
-Busca exata (match)
+    Busca exata (match)
 
-Busca fuzzy (com erro de digitação)
+    Busca fuzzy (com erro de digitação)
